@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Teste de Link</title>
+
+  <!-- Open Graph (preview) -->
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="Teste de vídeo" />
+  <meta property="og:description" content="Teste de preview (link)." />
+
+  <!-- Thumbnail do vídeo do Streamable -->
+  <!-- (o WhatsApp usa og:image para o card) -->
+  <meta property="og:image" content="https://thumbs.streamable.com/63lrwe.jpg" />
+
+  <!-- og:video é opcional; o preview já funciona com og:image -->
+  <meta property="og:video" content="https://streamable.com/63lrwe" />
+  <meta property="og:video:type" content="text/html" />
+
+  <!-- Evita cache agressivo durante testes -->
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="pragma" content="no-cache" />
+</head>
+<body>
+  <p>Redirecionando…</p>
+
+  <script>
+    // Redireciona para o WhatsApp
+    window.location.replace("https://wa.me/5527988058437");
+  </script>
+
+  <noscript>
+    <a href="https://wa.me/5527988058437">Abrir WhatsApp</a>
+  </noscript>
+</body>
+</html>
